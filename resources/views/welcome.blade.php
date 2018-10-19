@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" type="image/png" href="{{asset("img/favicon.png")}}">
+	<link rel="icon" type="image/png" href="{{secure_asset("img/favicon.png")}}">
 	<title>20 - 10 for you!</title>
 
 	<!-- Fonts -->
@@ -27,7 +27,7 @@
 			font-family: 'Raleway', sans-serif;
 			height: 100vh;
 			margin: 0;
-			background: url('{{asset('img/bg-content.jpg')}}') no-repeat center center fixed;
+			background: url('{{secure_asset('img/bg-content.jpg')}}') no-repeat center center fixed;
 			-webkit-background-size: cover;
 			-moz-background-size: cover;
 			-o-background-size: cover;
