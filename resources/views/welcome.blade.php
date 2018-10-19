@@ -35,6 +35,7 @@
 			background-size: cover;
 			position: relative;
 			overflow: hidden;
+			padding: 0;
 		}
 
 		.full-height {
@@ -83,18 +84,50 @@
 		}
 		.img-box-loading{
 			position: absolute;
-			width: 100vw;
-			height: 100vh;
-			margin: 0;
+			width: 100%;
+			height: 100%;
+			margin: auto 0;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			justify-content: center;
+			text-align: center;
+			align-items: center;
+			padding-top: 40%;
+			background: #fff;
+			transition: 0.5s;
 		}
+
+		.img-box-loading img{
+			width: 100px;
+			margin: auto 0;
+			transition: 0.5s;
+		}
+
+		.img-box-loading img {
+			animation: animate 0.8s infinite;
+		}
+
+		@keyframes animate {
+			0%{
+				opacity: 1;
+			}
+			100% {
+				opacity: 0;
+			}
+		}
+
+		.img-box-loading.complete {
+			visibility: hidden;
+			opacity: 0;
+			pointer-events: none;
+		}
+
 	</style>
 </head>
 <body>
 <div class="img-box-loading">
-	<img src="{{secure_asset('img/loading.png')}}" alt="">
-</div>
-<div class="flex-center position-ref full-height">
-
+	<img src="{{asset('img/loading.png')}}" alt="">
 </div>
 </body>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
@@ -121,7 +154,7 @@
             $(snow).addClass('snow-item fas fa-heart').css({
                 'position': 'absolute',
                 'z-index': 'auto',
-                'color': '#DC706A',
+                'color': '#dc413d',
                 'display': 'block',
                 'top': 0,
                 'height': '10px',
@@ -145,5 +178,9 @@
 
         }, 500);
     });
+    setTimeout(function () {
+        $('.img-box-loading').fadeOut('slow');
+        $('.img-box-loading img').attr('style', 'width:0px;')
+    },2000);
 </script>
 </html>
