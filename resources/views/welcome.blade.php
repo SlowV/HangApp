@@ -84,26 +84,7 @@
 </head>
 <body>
 <div class="flex-center position-ref full-height">
-	@if (Route::has('login'))
-		<div class="top-right links">
-			@auth
-				<a href="{{ url('/admin/product') }}">Trang chủ</a>
-			@else
-				<a href="{{ route('login') }}">Đăng nhập</a>
-				<a href="{{ route('register') }}">Đăng ký</a>
-			@endauth
-		</div>
-	@endif
 
-	<div class="content">
-		<div class="title m-b-md">
-
-			Welcome
-
-			Hana Store
-			@endauth
-		</div>
-	</div>
 
 </div>
 </body>
