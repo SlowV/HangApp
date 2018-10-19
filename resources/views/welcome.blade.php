@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<base href="{{secure_asset('')}}">
 	<link rel="icon" type="image/png" href="{{secure_asset("img/favicon.png")}}">
 	<title>20 - 10 for you!</title>
 
@@ -80,11 +81,19 @@
 		.m-b-md {
 			margin: 0 0 30px 550px;
 		}
+		.img-box-loading{
+			position: absolute;
+			width: 100vw;
+			height: 100vh;
+			margin: 0;
+		}
 	</style>
 </head>
 <body>
+<div class="img-box-loading">
+	<img src="{{secure_asset('img/loading.png')}}" alt="">
+</div>
 <div class="flex-center position-ref full-height">
-
 
 </div>
 </body>
