@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<base href="{{asset('')}}">
+	<base href="{{secure_asset('')}}">
 	<link rel="icon" type="image/png" href="{{asset("img/favicon.png")}}">
 	<title>20 - 10 for you!</title>
 
@@ -46,7 +46,7 @@
 			font-family: 'Raleway', sans-serif;
 			height: 100vh;
 			margin: 0;
-			background: url('{{asset('img/bg-content.jpg')}}') no-repeat center center fixed;
+			background: url('{{secure_asset('img/bg-content.jpg')}}') no-repeat center center fixed;
 			-webkit-background-size: cover;
 			-moz-background-size: cover;
 			-o-background-size: cover;
@@ -230,7 +230,7 @@
 			height: 168px;
 			position: relative;
 			margin-top: -130px;
-			background: transparent url({{asset('img/shadow.png')}}) no-repeat bottom center;
+			background: transparent url({{secure_asset('img/shadow.png')}}) no-repeat bottom center;
 			background-size: 100% 100%; /* stretches it */
 			z-index: -1;
 			opacity: 0.5;
@@ -254,7 +254,7 @@
 		.nav-arrows a {
 			width: 42px;
 			height: 42px;
-			background: #cbbfae url({{asset('img/nav.png')}}) no-repeat top left;
+			background: #cbbfae url({{secure_asset('img/nav.png')}}) no-repeat top left;
 			position: absolute;
 			top: 50%;
 			left: 2px;
@@ -342,7 +342,7 @@
 </head>
 <body>
 <div class="img-box-loading">
-	<img src="{{asset('img/loading.png')}}" alt="">
+	<img src="{{secure_asset('img/loading.png')}}" alt="">
 </div>
 <div class="input-box">
 	<input type="text" name="username" class="name" placeholder="Tên của em ?">
@@ -353,7 +353,7 @@
 	<ul id="sb-slider" class="sb-slider" style="z-index: 100">
 		<li>
 			<a href="javascript:void (0)" target="_blank">
-				<img src="{{asset('img/slide1.jpg')}}" alt="image1"/>
+				<img src="{{secure_asset('img/slide1.jpg')}}" alt="image1"/>
 			</a>
 			<div class="sb-description">
 				<h3>Creative Lifesaver</h3>
@@ -361,7 +361,7 @@
 		</li>
 		<li>
 			<a href="javascript:void (0)" target="_blank">
-				<img src="{{asset('img/slide2.jpg')}}" alt="image1"/>
+				<img src="{{secure_asset('img/slide2.jpg')}}" alt="image1"/>
 			</a>
 			<div class="sb-description">
 				<h3>Honest Entertainer</h3>
@@ -369,7 +369,7 @@
 		</li>
 		<li>
 			<a href="javascript:void (0)" target="_blank">
-				<img src="{{asset('img/slide3.jpg')}}" alt="image1"/>
+				<img src="{{secure_asset('img/slide3.jpg')}}" alt="image1"/>
 			</a>
 			<div class="sb-description">
 				<h3>Brave Astronaut</h3>
@@ -377,7 +377,7 @@
 		</li>
 		<li>
 			<a href="javascript:void (0)" target="_blank">
-				<img src="{{asset('img/slide4.jpg')}}" alt="image1"/>
+				<img src="{{secure_asset('img/slide4.jpg')}}" alt="image1"/>
 			</a>
 			<div class="sb-description">
 				<h3>Affectionate Decision Maker</h3>
@@ -385,7 +385,7 @@
 		</li>
 		<li>
 			<a href="javascript:void (0)" target="_blank">
-				<img src="{{asset('img/slide5.jpg')}}" alt="image1"/>
+				<img src="{{secure_asset('img/slide5.jpg')}}" alt="image1"/>
 			</a>
 			<div class="sb-description">
 				<h3>Faithful Investor</h3>
@@ -393,7 +393,7 @@
 		</li>
 		<li>
 			<a href="http://www.flickr.com/photos/strupler/2968126177" target="_blank">
-				<img src="{{asset('img/slide6.jpg')}}" alt="image1"/>
+				<img src="{{secure_asset('img/slide6.jpg')}}" alt="image1"/>
 			</a>
 			<div class="sb-description">
 				<h3>Groundbreaking Artist</h3>
@@ -401,7 +401,7 @@
 		</li>
 		<li>
 			<a href="javascript:void (0)" target="_blank">
-				<img src="{{asset('img/slide7.jpg')}}" alt="image1"/>
+				<img src="{{secure_asset('img/slide7.jpg')}}" alt="image1"/>
 			</a>
 			<div class="sb-description">
 				<h3>Selfless Philantropist</h3>
@@ -410,15 +410,15 @@
 	</ul>
 
 	<div id="shadow" class="shadow" style="z-index: 99; margin-left: 200px; margin-top: -90px;"></div>
-	<embed name="bosse" src="{{asset('media/CoDuocKhongEm-ChiDan-4820683.mp3')}}" loop="true" autostart="true" style="visibility:hidden;"/>
+	<embed name="bosse" src="{{secure_asset('media/CoDuocKhongEm-ChiDan-4820683.mp3')}}" loop="true" autostart="true" style="visibility:hidden;"/>
 </div><!-- /wrapper -->
 
 </body>
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
-<script src="{{asset('js/myJs.js')}}"></script>
+<script src="{{secure_asset('js/myJs.js')}}"></script>
 <script src="{{asset('js/slideBox.js')}}"></script>
-<script type="text/javascript">
+<script type="secure_asset/javascript">
     $(function () {
 
         var Page = (function () {
