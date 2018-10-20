@@ -1,12 +1,12 @@
 <!doctype html>
 <!--suppress JSAnnotator -->
-<html lang="{{ app()->getLocale() }}">
+<html lang="<?php echo e(app()->getLocale()); ?>">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<base href="{{secure_asset('')}}">
-	<link rel="icon" type="image/png" href="img/favicon.png">
+	<base href="<?php echo e(asset('')); ?>">
+	<link rel="icon" type="image/png" href="<?php echo e(asset("img/favicon.png")); ?>">
 	<title>20 - 10 for you!</title>
 
 	<!-- Fonts -->
@@ -33,8 +33,7 @@
 
 	<!-- Styles -->
 	<style>
-		@import url('https://fonts.googleapis.com/css?family=Mali&subset=vietnamese');
-
+		@import  url('https://fonts.googleapis.com/css?family=Mali&subset=vietnamese');
 		* {
 			padding: 0;
 			margin: 0;
@@ -46,7 +45,7 @@
 			font-family: 'Raleway', sans-serif;
 			height: 100vh;
 			margin: 0;
-			background: url('{{secure_asset('img/bg-content.jpg')}}') no-repeat center center fixed;
+			background: url('<?php echo e(asset('img/bg-content.jpg')); ?>') no-repeat center center fixed;
 			-webkit-background-size: cover;
 			-moz-background-size: cover;
 			-o-background-size: cover;
@@ -56,7 +55,7 @@
 			padding: 0;
 		}
 
-		.img-box-loading {
+		.img-box-loading{
 			position: absolute;
 			width: 100%;
 			height: 100%;
@@ -73,7 +72,7 @@
 			z-index: 9999;
 		}
 
-		.img-box-loading img {
+		.img-box-loading img{
 			width: 100px;
 			margin: auto 0;
 			transition: 0.5s;
@@ -83,8 +82,8 @@
 			animation: animate 0.8s infinite;
 		}
 
-		@keyframes animate {
-			0% {
+		@keyframes  animate {
+			0%{
 				opacity: 1;
 			}
 			100% {
@@ -98,11 +97,11 @@
 			pointer-events: none;
 		}
 
-		.input-box {
+		.input-box{
 			position: absolute;
 			top: 50%;
 			left: 50%;
-			transform: translate(-50%, -50%);
+			transform: translate(-50%,-50%);
 			justify-content: center;
 			text-align: center;
 			align-items: center;
@@ -115,7 +114,7 @@
 			overflow: hidden;
 		}
 
-		.input-box input {
+		.input-box input{
 			border: none;
 			width: 100%;
 			height: 100%;
@@ -230,7 +229,7 @@
 			height: 168px;
 			position: relative;
 			margin-top: -130px;
-			background: transparent url({{secure_asset('img/shadow.png')}}) no-repeat bottom center;
+			background: transparent url(<?php echo e(asset('img/shadow.png')); ?>) no-repeat bottom center;
 			background-size: 100% 100%; /* stretches it */
 			z-index: -1;
 			opacity: 0.5;
@@ -254,7 +253,7 @@
 		.nav-arrows a {
 			width: 42px;
 			height: 42px;
-			background: #cbbfae url({{secure_asset('img/nav.png')}}) no-repeat top left;
+			background: #cbbfae url(<?php echo e(asset('img/nav.png')); ?>) no-repeat top left;
 			position: absolute;
 			top: 50%;
 			left: 2px;
@@ -308,7 +307,7 @@
 		.nav-options span {
 			width: 30px;
 			height: 30px;
-			background: #cbbfae url({{secure_asset('img/options.png')}}) no-repeat top left;
+			background: #cbbfae url(<?php echo e(asset('img/options.png')); ?>) no-repeat top left;
 			text-indent: -9000px;
 			cursor: pointer;
 			opacity: 0.7;
@@ -324,27 +323,23 @@
 		.nav-options span:hover {
 			opacity: 1;
 		}
-
 		.hidden {
 			opacity: 0;
 			visibility: hidden;
 		}
-
-		.show {
+		.show{
 			opacity: 1;
 			visibility: visible;
 		}
 
-		.wrapper {
+		.wrapper{
 			margin: 7% 0 0 0;
 		}
-
-
 	</style>
 </head>
 <body>
 <div class="img-box-loading">
-	<img src="{{secure_asset('img/loading.png')}}" alt="">
+	<img src="<?php echo e(asset('img/loading.png')); ?>" alt="">
 </div>
 <div class="input-box">
 	<input type="text" name="username" class="name" placeholder="Tên của em ?">
@@ -355,7 +350,7 @@
 	<ul id="sb-slider" class="sb-slider" style="z-index: 100">
 		<li>
 			<a href="javascript:void (0)" target="_blank">
-				<img src="{{secure_asset('img/slide1.jpg')}}" alt="image1"/>
+				<img src="<?php echo e(asset('img/slide1.jpg')); ?>" alt="image1"/>
 			</a>
 			<div class="sb-description">
 				<h3>Creative Lifesaver</h3>
@@ -363,7 +358,7 @@
 		</li>
 		<li>
 			<a href="javascript:void (0)" target="_blank">
-				<img src="{{secure_asset('img/slide2.jpg')}}" alt="image1"/>
+				<img src="<?php echo e(asset('img/slide2.jpg')); ?>" alt="image1"/>
 			</a>
 			<div class="sb-description">
 				<h3>Honest Entertainer</h3>
@@ -371,7 +366,7 @@
 		</li>
 		<li>
 			<a href="javascript:void (0)" target="_blank">
-				<img src="img/slide3.jpg" alt="image1"/>
+				<img src="<?php echo e(asset('img/slide3.jpg')); ?>" alt="image1"/>
 			</a>
 			<div class="sb-description">
 				<h3>Brave Astronaut</h3>
@@ -379,7 +374,7 @@
 		</li>
 		<li>
 			<a href="javascript:void (0)" target="_blank">
-				<img src="{{secure_asset('img/slide4.jpg')}}" alt="image1"/>
+				<img src="<?php echo e(asset('img/slide4.jpg')); ?>" alt="image1"/>
 			</a>
 			<div class="sb-description">
 				<h3>Affectionate Decision Maker</h3>
@@ -387,7 +382,7 @@
 		</li>
 		<li>
 			<a href="javascript:void (0)" target="_blank">
-				<img src="{{secure_asset('img/slide5.jpg')}}" alt="image1"/>
+				<img src="<?php echo e(asset('img/slide5.jpg')); ?>" alt="image1"/>
 			</a>
 			<div class="sb-description">
 				<h3>Faithful Investor</h3>
@@ -395,7 +390,7 @@
 		</li>
 		<li>
 			<a href="http://www.flickr.com/photos/strupler/2968126177" target="_blank">
-				<img src="{{secure_asset('img/slide6.jpg')}}" alt="image1"/>
+				<img src="<?php echo e(asset('img/slide6.jpg')); ?>" alt="image1"/>
 			</a>
 			<div class="sb-description">
 				<h3>Groundbreaking Artist</h3>
@@ -403,7 +398,7 @@
 		</li>
 		<li>
 			<a href="javascript:void (0)" target="_blank">
-				<img src="{{secure_asset('img/slide7.jpg')}}" alt="image1"/>
+				<img src="<?php echo e(asset('img/slide7.jpg')); ?>" alt="image1"/>
 			</a>
 			<div class="sb-description">
 				<h3>Selfless Philantropist</h3>
@@ -411,16 +406,17 @@
 		</li>
 	</ul>
 
-	<div id="shadow" class="shadow" style="z-index: 99; margin-left: 200px; margin-top: -90px;"></div>
-	<audio name="bosse" id="audio"  src="{{secure_asset('media/CoDuocKhongEm-ChiDan-4820683.mp3')}}" loop="true"  style="visibility:hidden;display: none; opacity: 0;"></audio>
+	<div id="shadow" class="shadow" style="z-index: 99; margin-left: 200px; margin-top: -90px;" ></div>
+	<embed name="bosse" src="<?php echo e(asset('media/CoDuocKhongEm-ChiDan-4820683.mp3')); ?>" loop="true" autostart="true" style="visibility:hidden;"/>
+	
 </div><!-- /wrapper -->
 
 </body>
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
-<script src="{{secure_asset('js/myJs.js')}}"></script>
-<script src="{{secure_asset('js/slideBox.js')}}"></script>
-<script>
+<script src="<?php echo e(asset('js/myJs.js')); ?>"></script>
+<script src="<?php echo e(asset('js/slideBox.js')); ?>"></script>
+<script type="text/javascript">
     $(function () {
 
         var Page = (function () {
@@ -529,75 +525,57 @@
     setTimeout(function () {
         $('.img-box-loading').fadeOut('slow');
         $('.img-box-loading img').attr('style', 'width:0px;')
-    }, 2000);
+    },2000);
 
     $('.name').keypress(function (event) {
         var keycode = (event.keyCode ? event.keyCode : event.which);
         var name = $('.name').val();
         if (keycode == '13' && name != null) {
-            if (name == "hoaianh") {
+			if(name == "hoaianh" ){
+			    $('.wrapper').addClass('show');
+			    $('.wrapper').removeClass('hidden');
+                $('.sb-description h3').html('Chúc ' + name + ' 20 - 10 vui vẻ nhé em!');
+                $('.input-box').addClass('hidden');
+			} else if (name == "Hoài Anh") {
                 $('.wrapper').addClass('show');
                 $('.wrapper').removeClass('hidden');
                 $('.sb-description h3').html('Chúc ' + name + ' 20 - 10 vui vẻ nhé em!');
                 $('.input-box').addClass('hidden');
-                document.getElementById('audio').play();
-                document.getElementById('audio').loop = true;
-            } else if (name == "Hoài Anh") {
-                $('.wrapper').addClass('show');
-                $('.wrapper').removeClass('hidden');
-                $('.sb-description h3').html('Chúc ' + name + ' 20 - 10 vui vẻ nhé em!');
-                $('.input-box').addClass('hidden');
-                document.getElementById('audio').play();
-                document.getElementById('audio').loop = true;
-            } else if (name == "hoài Anh") {
+            }else if (name == "hoài Anh") {
                 $('.wrapper').addClass('show');
                 $('.wrapper').removeClass('hidden');
                 $('.sb-description h3').html('Chúc' + name + '20 - 10 vui vẻ nhé em!');
                 $('.input-box').addClass('hidden');
-                document.getElementById('audio').play();
-                document.getElementById('audio').loop = true;
-            } else if (name == "HoàiAnh") {
+            }else if (name == "HoàiAnh") {
                 $('.wrapper').addClass('show');
                 $('.wrapper').removeClass('hidden');
                 $('.sb-description h3').html('Chúc ' + name + ' 20 - 10 vui vẻ nhé em!');
                 $('.input-box').addClass('hidden');
-                document.getElementById('audio').play();
-                document.getElementById('audio').loop = true;
-            } else if (name == "hoaiAnh") {
+            }else if (name == "hoaiAnh") {
                 $('.wrapper').addClass('show');
                 $('.wrapper').removeClass('hidden');
                 $('.sb-description h3').html('Chúc ' + name + ' 20 - 10 vui vẻ nhé em!');
                 $('.input-box').addClass('hidden');
-                document.getElementById('audio').play();
-                document.getElementById('audio').loop = true;
-            } else if (name == "HOAIANH") {
+            }else if (name == "HOAIANH") {
                 $('.wrapper').addClass('show');
                 $('.wrapper').removeClass('hidden');
                 $('.sb-description h3').html('Chúc ' + name + ' 20 - 10 vui vẻ nhé em!');
                 $('.input-box').addClass('hidden');
-                document.getElementById('audio').play();
-                document.getElementById('audio').loop = true;
-            } else if (name == "hoài anh") {
+            }else if (name == "hoài anh") {
                 $('.wrapper').addClass('show');
                 $('.wrapper').removeClass('hidden');
                 $('.sb-description h3').html('Chúc ' + name + ' 20 - 10 vui vẻ nhé em!');
                 $('.input-box').addClass('hidden');
-                document.getElementById('audio').play();
-                document.getElementById('audio').loop = true;
-            } else if (name == "Hoài anh") {
+            }else if (name == "Hoài anh") {
                 $('.wrapper').addClass('show');
                 $('.wrapper').removeClass('hidden');
                 $('.sb-description h3').html('Chúc ' + name + ' 20 - 10 vui vẻ nhé em!');
                 $('.input-box').addClass('hidden');
-                document.getElementById('audio').play();
-                document.getElementById('audio').loop = true;
             } else if (name == "hoai anh") {
                 $('.wrapper').addClass('show');
                 $('.wrapper').removeClass('hidden');
                 $('.sb-description h3').html('Chúc ' + name + ' 20 - 10 vui vẻ nhé em!');
                 $('.input-box').addClass('hidden');
-                document.getElementById('audio').play();
-                document.getElementById('audio').loop = true;
             } else {
                 alert('Nhập đúng tên của em mà a đã biết :D')
             }
