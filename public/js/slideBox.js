@@ -215,7 +215,7 @@
         // if true the slicebox will start the animation automatically
         autoplay: false,
         // time (ms) between each rotation, if autoplay is true
-        interval: 3000,
+        interval: 5000,
         // the fallback will just fade out / fade in the items
         // this is the time fr the fade effect
         fallbackFadeSpeed: 300,
