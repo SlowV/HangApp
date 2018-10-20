@@ -417,8 +417,8 @@
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
 <script src="{{secure_asset('js/myJs.js')}}"></script>
-<script src="{{asset('js/slideBox.js')}}"></script>
-<script type="secure_asset/javascript">
+<script src="{{secure_asset('js/slideBox.js')}}"></script>
+<script>
     $(function () {
 
         var Page = (function () {
