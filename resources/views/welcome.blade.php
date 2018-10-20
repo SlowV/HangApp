@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<base href="{{secure_asset('')}}">
-	<link rel="icon" type="image/png" href="{{asset("img/favicon.png")}}">
+	<link rel="icon" type="image/png" href="{{secure_asset("img/favicon.png")}}">
 	<title>20 - 10 for you!</title>
 
 	<!-- Fonts -->
