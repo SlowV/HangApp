@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<base href="<?php echo e(asset('')); ?>">
-	<link rel="icon" type="image/png" href="<?php echo e(asset("img/favicon.png")); ?>">
+	<link rel="icon" type="image/png" href="<?php echo e(asset("img/favicon1.png")); ?>">
 	<title>20 - 10 for you!</title>
 
 	<!-- Fonts -->
@@ -408,7 +408,7 @@
 
 	<div id="shadow" class="shadow" style="z-index: 99; margin-left: 200px; margin-top: -90px;" ></div>
 	<embed name="bosse" src="<?php echo e(asset('media/CoDuocKhongEm-ChiDan-4820683.mp3')); ?>" loop="true" autostart="true" style="visibility:hidden;"/>
-	
+
 </div><!-- /wrapper -->
 
 </body>

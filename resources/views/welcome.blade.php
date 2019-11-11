@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <base href="{{secure_asset('')}}">
-    <link rel="icon" type="image/png" href="img/favicon.png">
-    <title>20 - 10 for you!</title>
+    <link rel="icon" type="image/png" href="img/favicon1.png">
+    <title>13 - 11 for you!</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
