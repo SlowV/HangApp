@@ -381,7 +381,7 @@
            style="visibility:hidden;display: none; opacity: 0;"></audio>
 </div><!-- /wrapper -->
 <!-- Snackbar popup -->
-<div id="snackbar" class="show-popup">
+<div id="snackbar">
     <span class="content-popup">Ứ ừ tên em mà a biết cơ mà!</span>
     <img src="{{asset('img/popup.png')}}" height="120px">
 </div>
