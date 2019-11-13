@@ -504,10 +504,8 @@
 </script>
 <script>
     $(window).on('load', function () {
-        setTimeout(function () {
-            $('.img-box-loading').fadeOut('slow');
-            $('.img-box-loading img').attr('style', 'width:0px;')
-        }, 2000);
+        $('.img-box-loading').fadeOut('slow');
+        $('.img-box-loading img').attr('style', 'width:0px;')
     });
 
     function getRandomArbitrary(min, max) {
