@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <base href="{{asset('')}}">
+    <base href="{{secure_asset('')}}">
     <link rel="icon" type="image/png" href="img/favicon1.png">
     <meta property="og:image" content="https://raw.githubusercontent.com/SlowV/againHtmlCore/master/projectSem1/public/img/MyMusic/Logo.png"/>
     <meta property="og:title" content="13 - 11 for you!"/>
@@ -51,7 +51,7 @@
             font-family: 'Raleway', sans-serif;
             height: 100vh;
             margin: 0;
-            background: url('{{asset('img/bg-content.jpg')}}') no-repeat center center fixed;
+            background: url('{{secure_asset('img/bg-content.jpg')}}') no-repeat center center fixed;
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
@@ -236,7 +236,7 @@
             height: 168px;
             position: relative;
             margin-top: -130px;
-            background: transparent url({{asset('img/shadow.png')}}) no-repeat bottom center;
+            background: transparent url({{secure_asset('img/shadow.png')}}) no-repeat bottom center;
             background-size: 100% 100%; /* stretches it */
             z-index: -1;
             opacity: 0.5;
@@ -260,7 +260,7 @@
         .nav-arrows a {
             width: 42px;
             height: 42px;
-            background: #cbbfae url({{asset('img/nav.png')}}) no-repeat top left;
+            background: #cbbfae url({{secure_asset('img/nav.png')}}) no-repeat top left;
             position: absolute;
             top: 50%;
             left: 2px;
@@ -314,7 +314,7 @@
         .nav-options span {
             width: 30px;
             height: 30px;
-            background: #cbbfae url({{asset('img/options.png')}}) no-repeat top left;
+            background: #cbbfae url({{secure_asset('img/options.png')}}) no-repeat top left;
             text-indent: -9000px;
             cursor: pointer;
             opacity: 0.7;
@@ -345,11 +345,11 @@
             margin: 7% 0 0 0;
         }
     </style>
-    <link rel="stylesheet" href="{{asset('css/index.css')}}">
+    <link rel="stylesheet" href="{{secure_asset('css/index.css')}}">
 </head>
 <body>
 <div class="img-box-loading">
-    <img src="{{asset('img/loading.png')}}" alt="">
+    <img src="{{secure_asset('img/loading.png')}}" alt="">
 </div>
 <div class="input-box">
     <input type="text" name="username" class="name" placeholder="Tên của em ?">
@@ -360,7 +360,7 @@
     <ul id="sb-slider" class="sb-slider" style="z-index: 100">
         <li>
             <a href="javascript:void (0)">
-                <img src="{{asset('img/slide1.jpg')}}" alt="image1"/>
+                <img src="{{secure_asset('img/slide1.jpg')}}" alt="image1"/>
             </a>
             <div class="sb-description">
                 <h3>Creative Lifesaver</h3>
@@ -368,7 +368,7 @@
         </li>
         <li>
             <a href="javascript:void (0)">
-                <img src="{{asset('img/slide2.jpg')}}" alt="image1"/>
+                <img src="{{secure_asset('img/slide2.jpg')}}" alt="image1"/>
             </a>
             <div class="sb-description">
                 <h3>Honest Entertainer</h3>
@@ -376,7 +376,7 @@
         </li>
         <li>
             <a href="javascript:void (0)">
-                <img src="{{asset('img/slide3.jpg')}}" alt="image1"/>
+                <img src="{{secure_asset('img/slide3.jpg')}}" alt="image1"/>
             </a>
             <div class="sb-description">
                 <h3>Brave Astronaut</h3>
@@ -384,7 +384,7 @@
         </li>
         <li>
             <a href="javascript:void (0)">
-                <img src="{{asset('img/slide4.jpg')}}" alt="image1"/>
+                <img src="{{secure_asset('img/slide4.jpg')}}" alt="image1"/>
             </a>
             <div class="sb-description">
                 <h3>Affectionate Decision Maker</h3>
@@ -392,7 +392,7 @@
         </li>
         <li>
             <a href="javascript:void (0)">
-                <img src="{{asset('img/slide5.jpg')}}" alt="image1"/>
+                <img src="{{secure_asset('img/slide5.jpg')}}" alt="image1"/>
             </a>
             <div class="sb-description">
                 <h3>Faithful Investor</h3>
@@ -400,7 +400,7 @@
         </li>
         <li>
             <a href="http://www.flickr.com/photos/strupler/2968126177">
-                <img src="{{asset('img/slide6.jpg')}}" alt="image1"/>
+                <img src="{{secure_asset('img/slide6.jpg')}}" alt="image1"/>
             </a>
             <div class="sb-description">
                 <h3>Groundbreaking Artist</h3>
@@ -408,7 +408,7 @@
         </li>
         <li>
             <a href="javascript:void (0)">
-                <img src="{{asset('img/slide7.jpg')}}" alt="image1"/>
+                <img src="{{secure_asset('img/slide7.jpg')}}" alt="image1"/>
             </a>
             <div class="sb-description">
                 <h3>Selfless Philantropist</h3>
@@ -416,7 +416,7 @@
         </li>
         <li>
             <a href="javascript:void (0)">
-                <img src="{{asset('img/slide8.jpg')}}" alt="image1"/>
+                <img src="{{secure_asset('img/slide8.jpg')}}" alt="image1"/>
             </a>
             <div class="sb-description">
                 <h3>Selfless Philantropist</h3>
@@ -424,7 +424,7 @@
         </li>
         <li>
             <a href="javascript:void (0)">
-                <img src="{{asset('img/slide9.jpg')}}" alt="image1"/>
+                <img src="{{secure_asset('img/slide9.jpg')}}" alt="image1"/>
             </a>
             <div class="sb-description">
                 <h3>Selfless Philantropist</h3>
@@ -432,7 +432,7 @@
         </li>
         <li>
             <a href="javascript:void (0)">
-                <img src="{{asset('img/slide10.jpg')}}" alt="image1"/>
+                <img src="{{secure_asset('img/slide10.jpg')}}" alt="image1"/>
             </a>
             <div class="sb-description">
                 <h3>Selfless Philantropist</h3>
@@ -440,7 +440,7 @@
         </li>
         <li>
             <a href="javascript:void (0)">
-                <img src="{{asset('img/slide11.jpg')}}" alt="image1"/>
+                <img src="{{secure_asset('img/slide11.jpg')}}" alt="image1"/>
             </a>
             <div class="sb-description">
                 <h3>Selfless Philantropist</h3>
@@ -449,19 +449,19 @@
     </ul>
 
     <div id="shadow" class="shadow" style="z-index: 99; margin-left: 200px; margin-top: -90px;"></div>
-    <audio name="bosse" id="audio" src="{{asset('media/CoDuocKhongEm-ChiDan-4820683.mp3')}}" loop="true"
+    <audio name="bosse" id="audio" src="{{secure_asset('media/CoDuocKhongEm-ChiDan-4820683.mp3')}}" loop="true"
            style="visibility:hidden;display: none; opacity: 0;"></audio>
 </div><!-- /wrapper -->
 <!-- Snackbar popup -->
 <div id="snackbar">
     <span class="content-popup">Ứ ừ tên em mà a biết cơ mà!</span>
-    <img src="{{asset('img/popup.png')}}" height="120px">
+    <img src="{{secure_asset('img/popup.png')}}" height="120px">
 </div>
 </body>
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
-<script src="{{asset('js/myJs.js')}}"></script>
-<script src="{{asset('js/slideBox.js')}}"></script>
+<script src="{{secure_asset('js/myJs.js')}}"></script>
+<script src="{{secure_asset('js/slideBox.js')}}"></script>
 <script>
     $(function () {
         var Page = (function () {
