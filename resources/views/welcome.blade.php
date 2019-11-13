@@ -1,12 +1,16 @@
 <!doctype html>
 <!--suppress JSAnnotator -->
-<html lang="{{ app()->getLocale() }}">
+<html lang="{{ app()->getLocale() }}" xmlns:fb="http://ogp.me/ns/fb#">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <base href="{{asset('')}}">
     <link rel="icon" type="image/png" href="img/favicon1.png">
+    <meta property="og:image" content="https://raw.githubusercontent.com/SlowV/againHtmlCore/master/projectSem1/public/img/MyMusic/Logo.png"/>
+    <meta property="og:title" content="13 - 11 for you!"/>
+    <meta property="og:description" content='Can I say "I love you" for you?'/>
+    <meta name="author" content="SlowV">
     <title>13 - 11 for you!</title>
 
     <!-- Fonts -->
